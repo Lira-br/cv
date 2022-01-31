@@ -8,92 +8,111 @@
   nome de autor, e outras infos do meu site para o google-->
   <meta charset="utf-8">
   <title>Site pessoal do Lira <br> E um comeco</title>
+  <!-- NOTE: LINK pra External CSS pro body e linhas horizontais, obs: lembrar que bordas sao um quadrado -->
+  <link rel="stylesheet" href="css/styles.css">
+
+
 </head>
 
 <body>
-  <table cellspacing=20>
-    <tr>
-      <td>
-        <!-- NOTE: Imagem minha no meu diretorio -->
-        <img src="Images/Minha foto-modified.png" alt="Foto do Joao" width=350 height=350>
-      </td>
-      <td>
-        <!-- NOTE: attribute STRONG: alternativa melhor para BOLD, significa que codigo e impoprtante -->
-        <h1><strong>JOAO VICTOR LIRA`S SITE</strong></h1>
-        <br>
-        <!-- NOTE: attribute EM: alternativa pra italics -->
-        <p> Esse e o meu site, sou estudante de <em>CS</em> e procuro melhorar minhas habilidades de
-          dev web</p>
-        <p> Eu adoro jogar jogos com meus amigos, andar de bicicleta, explorar o mundo</p>
-      </td>
-    </tr>
-  </table>
+  <header>
+    <table cellspacing=20>
+      <tr>
+        <td>
+          <!-- NOTE: Imagem minha no meu diretorio -->
+          <img src="Images/Minha foto-modified.png" alt="Foto do Joao" width=350 height=350>
+        </td>
+        <td>
+          <!-- NOTE: attribute STRONG: alternativa melhor para BOLD, significa que codigo e impoprtante -->
+          <h1><strong>JOAO VICTOR LIRA`S SITE</strong></h1>
+          <br>
+          <!-- NOTE: attribute EM: alternativa pra italics -->
+          <p> Esse e o meu site, sou estudante de <em>CS</em> e procuro melhorar minhas habilidades de
+            dev web</p>
+          <p> Eu adoro jogar jogos com meus amigos, andar de bicicleta, explorar o mundo</p>
+        </td>
+      </tr>
+    </table>
+  </header>
+    <hr>
+  <nav>
+    <br>
+    <h3>Education</h3>
 
+    <p>
+    <ul>
+      <a href="Education.html">Minha Educacao</a>
+    </ul>
+    </p>
+    <h3>Hobbies</h3>
+    <ul>
+      <p> <a href="Hobbies.html">Meus Hobbies</a></p>
+    </ul>
+    <br>
+  </nav>
+
+
+  <main>
+    <hr>
+    <br>
+    <h3>Work Experience</h3>
+
+    <!-- NOTE: Dividir table em HEAD (thead) E BODY (tbody), que nem a estrutura do  html, ajuda a spearar cada um, organizar, e aplicar modificacoes individuais c/css-->
+    <table cellspacing=20>
+      <thead>
+        <!-- NOTE: table row (tr) representa cada linha da minha table pra cada uma delas precisa de tr-->
+        <tr>
+          <th>Dates</th>
+          <th>Job Description</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>2018-2019</td>
+          <td>Assistent manager in family`s business</td>
+        </tr>
+        <tr>
+          <td>2020-2021</td>
+          <td>Worked as a floater at university dining</td>
+        </tr>
+      </tbody>
+
+
+
+    </table>
+    <h3>Skills</h3>
+    <table cellspacing=15>
+
+      <tr>
+        <td>Java Language</td>
+        <td> &#11088;&#11088;&#11088;</td>
+        <td> Computer Assembly</td>
+        <td>&#11088;&#11088;&#11088;&#11088;</td>
+      </tr>
+      <tr>
+        <td>MySQL Language</td>
+        <td>&#11088;&#11088;&#11088;&#11088;</td>
+        <td>Linux Kenel</td>
+        <td>&#11088;&#11088;&#11088;</td>
+      </tr>
+      <tr>
+
+      </tr>
+      <tr>
+
+      </tr>
+
+    </table>
+    <br>
+  </main>
   <hr>
-
-  <h3>Education</h3>
-  <p>
-  <ul>
-    <a href="Education.html">Minha Educacao</a>
-  </ul>
-  </p>
-  <h3>Hobbies</h3>
-  <ol type="1">
-
-    <a href="Hobbies.html">Meus Hobbies</a>
-
-  </ol>
-  <h3>Contact Us</h3>
-  <p><a href="Contact Me.html">Contact</a></p>
-
-  <h3>Work Experience</h3>
-
-<!-- NOTE: Dividir table em HEAD (thead) E BODY (tbody), que nem a estrutura do  html, ajuda a spearar cada um, organizar, e aplicar modificacoes individuais c/css-->
-  <table>
-    <thead>
-      <!-- NOTE: table row (tr) representa cada linha da minha table pra cada uma delas precisa de tr-->
-      <tr>
-        <th>Dates</th>
-        <th>Job Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td>2018-2019</td>
-        <td>Assistent manager in family`s business</td>
-      </tr>
-      <tr>
-        <td>2020-2021</td>
-        <td>Worked as a floater at university dining</td>
-      </tr>
-    </tbody>
-
-
-
-  </table>
-  <h3>Skills</h3>
-  <table cellspacing=15>
-
-    <tr>
-      <td>Java Language</td>
-      <td> &#11088;&#11088;&#11088;</td>
-      <td>  Computer Assembly</td>
-      <td>&#11088;&#11088;&#11088;&#11088;</td>
-    </tr>
-    <tr>
-      <td>MySQL Language</td>
-      <td>&#11088;&#11088;&#11088;&#11088;</td>
-      <td>Linux Kenel</td>
-      <td>&#11088;&#11088;&#11088;</td>
-    </tr>
-    <tr>
-
-    </tr>
-    <tr>
-
-    </tr>
-
-  </table>
+  <footer>
+    <br>
+    <h3>Contact Me</h3>
+      <ul>
+        <p><a href="Contact Me.html">Contact</a></p>
+      </ul>
+  </footer>
 
 
 
